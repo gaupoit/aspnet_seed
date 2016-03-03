@@ -3,7 +3,7 @@
     "files.exclude": {
         "**/.git": true,
         "**/.DS_Store": true,
-        "source/**/*.js": true,
-        "test/**/*.js": true
+        "wwwroot/app/source/**/*.js": true,
+        "wwwroot/app/test/**/*.js": true
     }
 }

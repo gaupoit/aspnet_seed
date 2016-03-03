@@ -232,3 +232,11 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+#Project Ignore File
+coverage/
+wwwroot/app/dist/
+wwwroot/app/source/**/*.js.map
+wwwroot/app/source/**/*.js
+wwwroot/app/test/**/*.js.map
+wwwroot/app/test/**/*.js

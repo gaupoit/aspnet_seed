@@ -41,7 +41,7 @@ gulp.task("build-app", function () {
         appFolder + "source/interfaces/interfaces.d.ts"
     ])
         .pipe(tsc(tsProject))
-        .js.pipe(gulp.dest("source/"));
+        .js.pipe(gulp.dest(appFolder + "source/"));
 });
 
 var tsTestProject = tsc.createProject("tsconfig.json");
@@ -53,7 +53,7 @@ gulp.task("build-test", function () {
         appFolder + "source/interfaces/interfaces.d.ts"
     ])
         .pipe(tsc(tsTestProject))
-        .js.pipe(gulp.dest("test/"));
+        .js.pipe(gulp.dest(appFolder + "test/"));
 });
 
 gulp.task("build", function (cb) {
@@ -83,7 +83,7 @@ gulp.task("test", ["istanbul:hook"], function () {
 gulp.task("bundle", function () {
 
     var libraryName = "seed_app";
-    var mainTsFilePath = appFolder + "source/main.ts";
+    var mainTsFilePath = appFolder + "source/main.js";
     var outputFolder = appFolder + "dist/";
     var outputFileName = libraryName + ".min.js";
 
