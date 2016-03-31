@@ -1,6 +1,8 @@
 /**
  * Sample
  */
+import * as $ from "jquery";
+
 class Sample {
     public message: string;
     constructor(message: string) {
@@ -8,4 +10,6 @@ class Sample {
     }
 }
 
+$("body").html(`<h1>Hello</h1>`);
 export default Sample;
+
